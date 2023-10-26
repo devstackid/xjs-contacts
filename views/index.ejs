@@ -1,0 +1,20 @@
+
+    <h1>Halaman Index</h1>
+    <h2 class="text-primary">Hallo <%= nama %></h2>
+
+    <h4 class="text-danger">Daftar mahasiswa</h4>
+    <% if (mahasiswa.length < 1) { %>
+     <p>Data masih kosong</p>
+    <% } %>
+    
+    <% mahasiswa.forEach(mhs => { %>
+      <ul>
+        <li>Nama : <%= mhs.nama %></li>
+        <li>Alamat : <%= mhs.alamat %> </li>
+      </ul>
+    <% }) %>
+    <ul>
+      <li>Nama : </li>
+      <li>Alamat : </li>
+    </ul>
+    
